@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Hasbik Escobar</title>
+  <!-- Preload critical assets for loadscrean -->
+  <link rel="preload" as="image" href="">
+  <link rel="preload" as="image" href="">
+  <link rel="preload" as="image" href="">
+  <link href="https://db.onlinewebfonts.com/c/b741399e65212214a65785c0e777b3e2?family=Distillery+Strong+W00+Regular" rel="stylesheet">
+  <link rel="stylesheet" crossorigin href="styles.css">
+</head>
+<body>
+  <div class="splash-screen">
+    <div class="splash-background"></div>
+    <div class="overlay"></div>
+    <div class="splash-content">
+      
+        <button class="confirm-button" id="confirmButton1" loading="eager">Plata</button>
+        <h2 class="access-restricted" loading="eager">- O -</h2>
+        <button class="confirm-button" id="confirmButton" loading="eager">Plombo</button>
+      
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Top infinite scroll text -->
+    <div class="scroll-container top" role="button" tabindex="0" aria-label="Click to copy text">
+      <div class="scroll-text">
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+      </div>
+      <div class="copy-notification" aria-live="polite">Copied!</div>
+    </div>
+
+    <header class="hero">
+      <div class="video-container">
+        <video loop playsinline muted id="bgVideo" class="desktop-video" preload="metadata">
+          <source src="assets\WhatsApp Video 2025-05-05 at 13.47.21.mp4" type="video/mp4" media="(min-width: 769px)">
+        </video>
+        <video loop playsinline muted id="bgVideoMobile" class="mobile-video" preload="metadata">
+          <source src="assets\WhatsApp Video 2025-05-05 at 11.11.22 (1).mp4" type="video/mp4" media="(max-width: 768px)">
+        </video>
+        <div class="overlay"></div>
+      </div>
+      <div class="content">
+        <img src="assets\hasbik_logo.png" alt="hasbikescobar" class="logo" id="mainLogo" loading="eager"> <!-- main headline/logo-->
+      </div>
+    </header>
+
+    <!-- Bottom infinite scroll text -->
+    <div class="scroll-container bottom" role="button" tabindex="0" aria-label="Click to copy text">
+      <div class="scroll-text">
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+        <span>"coin addres comming soon"</span>
+      </div>
+      <div class="copy-notification" aria-live="polite">Copied!</div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        
+        <div class="social-links">
+          <a href="https://x.com/Hasbik_Escobar" target="_blank" rel="noopener noreferrer" aria-label="X" class="social-link">
+            <img src="assets\x.png" alt="X" class="social-icon">
+          </a>
+          <a href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="social-link">
+            <img src="assets\tg.png" alt="Telegram" class="social-icon">
+          </a>
+          <a href="https://dexscreener.com" target="_blank" rel="noopener noreferrer" aria-label="Dex" class="social-link">
+            <img src="assets\dex.png" alt="Dex" class="social-icon">
+          </a>
+          <a href="https://pump.fun" target="_blank" rel="noopener noreferrer" aria-label="Pump" class="social-link">
+            <img src="assets\pupfun.png" alt="Pump" class="social-icon">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <button id="audioToggle" class="audio-toggle" aria-label="Toggle audio">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="volume-on">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="volume-off hidden">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+      <line x1="23" y1="9" x2="17" y2="15"></line>
+      <line x1="17" y1="9" x2="23" y2="15"></line>
+    </svg>
+  </button>
+
+  <!-- Background music -->
+  <audio id="backgroundAudio" loop preload="none">
+    <source src="assets\bg_audio.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Logo click sound effect -->
+  <audio id="soundChaching" preload="none">
+    <source src="assets\hasbulla-laugh.mp3" type="audio/mp3">
+  </audio>
+  <audio id="soundbang" preload="none">
+    <source src="assets\bang_audio.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const video = document.getElementById('bgVideo');
+      const videoMobile = document.getElementById('bgVideoMobile');
+      const audioToggle = document.getElementById('audioToggle');
+      const volumeOn = audioToggle.querySelector('.volume-on');
+      const volumeOff = audioToggle.querySelector('.volume-off');
+      const splashScreen = document.querySelector('.splash-screen');
+      const container = document.querySelector('.container');
+      const confirmButton = document.getElementById('confirmButton');
+      const confirmButton1 = document.getElementById('confirmButton1');
+      const videoContainer = document.querySelector('.video-container');
+      const content = document.querySelector('.content');
+      const backgroundAudio = document.getElementById('backgroundAudio');
+      const mainLogo = document.getElementById('mainLogo');
+      const soundChaching = document.getElementById('soundChaching');
+      const soundbang = document.getElementById('soundbang');
+      const socialLinks = document.querySelectorAll('.social-link');
+      const scrollContainers = document.querySelectorAll('.scroll-container');
+
+      // Function to play chaching sound
+      const playChachingSound = () => {
+        soundChaching.currentTime = 0;
+        soundChaching.play();
+      };
+      const playbanggSound = () => {
+        soundbang.currentTime = 0;
+        soundbang.play();
+      };
+
+      // Logo click handler with animation
+      mainLogo.addEventListener('click', () => {
+        playChachingSound();
+        mainLogo.classList.add('clicked');
+        
+        setTimeout(() => {
+          mainLogo.classList.remove('clicked');
+        }, 600);
+      });
+
+      // Add click handler to social links
+      socialLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          playChachingSound();
+        });
+      });
+
+      // Scroll container click-to-copy functionality
+      scrollContainers.forEach(container => {
+        const copyText = "<!--insert coin address-->";
+        const notification = container.querySelector('.copy-notification');
+        let timeout;
+
+        const showNotification = () => {
+          notification.classList.add('show');
+          if (timeout) clearTimeout(timeout);
+          timeout = setTimeout(() => {
+            notification.classList.remove('show');
+          }, 2000);
+        };
+
+        const handleCopy = async (e) => {
+          e.preventDefault();
+          try {
+            await navigator.clipboard.writeText(copyText);
+            playChachingSound();
+            showNotification();
+          } catch (err) {
+            console.error('Failed to copy text:', err);
+          }
+        };
+
+        container.addEventListener('click', handleCopy);
+        container.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            handleCopy(e);
+          }
+        });
+      });
+
+      // Optimize video loading
+      const loadVideo = () => {
+        const currentVideo = window.innerWidth > 768 ? video : videoMobile;
+        if (currentVideo) {
+          currentVideo.load();
+        }
+      };
+
+      // Function to play videos (silently)
+      const playVideos = async () => {
+        try {
+          const currentVideo = window.innerWidth > 768 ? video : videoMobile;
+          if (currentVideo) {
+            await currentVideo.play();
+          }
+        } catch (error) {
+          console.error('Error playing video:', error);
+        }
+      };
+
+      // Function to play background audio
+      const playBackgroundAudio = async () => {
+        try {
+          backgroundAudio.loop = true; // Ensure loop is enabled
+          await backgroundAudio.play();
+          volumeOn.classList.remove('hidden');
+          volumeOff.classList.add('hidden');
+        } catch (error) {
+          console.error('Error playing audio:', error);
+        }
+      };
+
+      // Audio control functions
+      const muteAudio = () => backgroundAudio.volume = 0;
+      const unmuteAudio = () => backgroundAudio.volume = 1;
+
+      // Handle confirm button click with optimized loading
+      confirmButton.addEventListener('click', async function() {
+        // Play the cha-ching sound
+        playbanggSound();
+        
+        // Show container first
+        container.classList.add('visible');
+        
+        // Load video before playing
+        loadVideo();
+        
+        // Fade out splash screen
+        requestAnimationFrame(() => {
+          splashScreen.classList.add('hidden');
+        });
+
+        // Play media with slight delay to ensure smooth transition
+        setTimeout(async () => {
+          await playVideos();
+          await playBackgroundAudio();
+        }, 100);
+      });
+      confirmButton1.addEventListener('click', async function() {
+        // Play the cha-ching sound
+        playChachingSound();
+        
+        // Show container first
+        container.classList.add('visible');
+        
+        // Load video before playing
+        loadVideo();
+        
+        // Fade out splash screen
+        requestAnimationFrame(() => {
+          splashScreen.classList.add('hidden');
+        });
+
+        // Play media with slight delay to ensure smooth transition
+        setTimeout(async () => {
+          await playVideos();
+          await playBackgroundAudio();
+        }, 100);
+      });
+
+      // Optimized audio toggle
+      audioToggle.addEventListener('click', function() {
+        if (backgroundAudio.volume === 0) {
+          unmuteAudio();
+          volumeOn.classList.remove('hidden');
+          volumeOff.classList.add('hidden');
+        } else {
+          muteAudio();
+          volumeOn.classList.add('hidden');
+          volumeOff.classList.remove('hidden');
+        }
+      });
+
+      // Logo proximity scaling with enhanced effect
+      const handleLogoProximity = (e) => {
+        if (window.innerWidth <= 768) return; // Disable on mobile
+
+        const rect = mainLogo.getBoundingClientRect();
+        const logoCenter = {
+          x: rect.left + rect.width / 2,
+          y: rect.top + rect.height / 2
+        };
+
+        // Calculate distance from cursor to logo center
+        const distance = Math.hypot(
+          e.clientX - logoCenter.x,
+          e.clientY - logoCenter.y
+        );
+
+        // Increased maximum distance for wider effect range
+        const maxDistance = Math.max(window.innerWidth, window.innerHeight);
+        // Enhanced maximum scale for more noticeable effect
+        const maxScale = 0.5;
+        // Minimum scale to maintain some scaling even at max distance
+        const minScale = 0.35;
+
+        // Calculate scale with improved curve
+        const scale = Math.max(
+          minScale,
+          maxScale - (Math.pow(distance / maxDistance, 0.75) * (maxScale - minScale))
+        );
+
+        mainLogo.style.setProperty('--logo-scale', scale);
+      };
+
+      // Optimized parallax effect using requestAnimationFrame
+      let ticking = false;
+      document.addEventListener('mousemove', (e) => {
+        if (!ticking) {
+          requestAnimationFrame(() => {
+            const { clientX, clientY } = e;
+            const { innerWidth, innerHeight } = window;
+            
+            const xPercent = (clientX - innerWidth / 2) / (innerWidth / 2);
+            const yPercent = (clientY - innerHeight / 2) / (innerHeight / 2);
+            
+            const videoTransform = `
+              translate3d(${xPercent * -20}px, ${yPercent * -20}px, 0)
+              rotateX(${yPercent * 2}deg)
+              rotateY(${xPercent * -2}deg)
+            `;
+            
+            const contentTransform = `
+              translate3d(${xPercent * 7.5}px, ${yPercent * 7.5}px, 15px)
+              rotateX(${yPercent * 1}deg)
+              rotateY(${xPercent * -1}deg)
+            `;
+            
+            videoContainer.style.transform = videoTransform;
+            content.style.transform = contentTransform;
+
+            // Handle logo proximity scaling
+            handleLogoProximity(e);
+            
+            ticking = false;
+          });
+          ticking = true;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
